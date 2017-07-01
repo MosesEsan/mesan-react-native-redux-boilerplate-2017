@@ -9,4 +9,4 @@ In the <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerpl
 **Tutorial** <br/>
 Tutorial available on my <a href="http://mosesesan.com/blog/2017/07/01/react-native-redux-with-crud-operations-tutorial" target="_blank">blog</a>.
 
-<img src="https://media.giphy.com/media/5fHMiXytc0ECc/giphy.gif" alt="Demo (GIF)"  height="500" width="300" align="left">
+<img src="https://raw.githubusercontent.com/MosesEsan/mesan-react-native-redux-boilerplate/crud-operations/demo/ezgif.com-video-to-gif.gif" alt="Demo (GIF)" height="500" width="300" align="left">
