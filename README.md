@@ -7,6 +7,6 @@ In the <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerpl
 <a href="https://appetize.io/app/bp4nxpva1npywpju7tttrq39n8?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3" target="_blank">View Demo</a>
 
 **Tutorial** <br/>
-Tutorial available on my <a href="http://mosesesan.com/blog/2017/07/01/react-native-redux-with-crud-operations-tutorial" target="_blank">blog</a>.
+Tutorial available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-with-crud-operations-cdb449538886" target="_blank">blog</a>.
 
 <img src="https://raw.githubusercontent.com/MosesEsan/mesan-react-native-redux-boilerplate/crud-operations/demo/ezgif.com-video-to-gif.gif" alt="Demo (GIF)" height="500" width="300" align="left">
