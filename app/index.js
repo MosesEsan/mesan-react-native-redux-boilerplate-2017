@@ -1,22 +1,22 @@
 /**
  * Author: Moses Adekunle Esan for E&M Digital
- * Date: 6/29/2017
- * Project: React Native Redux Quotes App with CRUD operations
+ * Date: 7/27/2017
+ * Project: How to Build a React Native/Redux app using a JWT-Powered API.
  */
+
 'use strict';
 
 import React, {Component} from 'react';
-import { View, AsyncStorage } from 'react-native';
+import { View } from 'react-native';
 
 import {Router, Scene, Reducer} from 'react-native-router-flux';
 
 import Home from './components/home'
-import NewQuote from './components/new_quote'
+import Welcome from './components/auth/welcome'
+import Login from './components/auth/login'
+import Register from './components/auth/register'
+import Password from './components/auth/password'
 
-import Data from '../quotes.json'
-
-import {connect} from 'react-redux';
-import {getQuotes} from './actions'
 
 //Reducer for Router - See react-native-router-flux package README for more info
 const reducerCreate = params => {
@@ -27,61 +27,44 @@ const reducerCreate = params => {
 };
 
 // Scene Style
-const getSceneStyle = (/* NavigationSceneRendererProps */ props, computedProps) => {
+/* NavigationSceneRendererProps */
+const getSceneStyle = (props, computedProps) => {
     const style = {
         flex: 1,
         backgroundColor: '#fff',
         shadowColor: null,
         shadowOffset: null,
         shadowOpacity: null,
-        shadowRadius: null,
+        shadowRadius: null
     };
+
     if (computedProps.isActive) {
         style.marginTop = computedProps.hideNavBar ? 0 : 64;
     }
+
     return style;
 };
 
-class Main extends Component {
-
-    componentDidMount() {
-        var _this = this;
-        //Check if any data exist
-        AsyncStorage.getItem('data', (err, data) => {
-            //if it doesn't exist, extract from json file
-            //save the initial data in Async
-            if (data === null){
-                AsyncStorage.setItem('data', JSON.stringify(Data.quotes));
-
-                setTimeout(() => {
-                    _this.props.getQuotes();
-                }, 2000);
-
-            }
-        });
-    }
-
+export default class Main extends Component {
     render() {
         return (
             <View style={{flex:1}}>
                 <Router createReducer={reducerCreate} getSceneStyle={getSceneStyle}>
                     <Scene key="root">
                         <Scene key="home" component={Home} title="Home" initial/>
-                        <Scene key="new_quote" component={NewQuote} title="New Quote"/>
+                        <Scene key="welcome" hideNavBar={true} hideTabBar panHandlers={null}
+                               schema="modal" direction="vertical" title="Login">
+                            <Scene key="welcome-" component={Welcome} title="Welcome" initial={true}
+                                   panHandlers={null}/>
+                            <Scene key="login" component={Login} title="Login" panHandlers={null}/>
+                            <Scene key="register" component={Register} title="Register"
+                                   panHandlers={null}/>
+                            <Scene key="password" component={Password} title="Password"
+                                   panHandlers={null}/>
+                        </Scene>
                     </Scene>
                 </Router>
             </View>
         );
     }
 }
-
-function mapStateToProps(state, props) {
-    return {}
-}
-
-//Connect everything
-export default connect(mapStateToProps, {getQuotes})(Main);
-
-
-
-

@@ -1,7 +1,7 @@
 /**
  * Author: Moses Adekunle Esan for E&M Digital
- * Date: 2/3/2017
- * Project: React Native Redux Boilerplate
+ * Date: 7/27/2017
+ * Project: How to Build a React Native/Redux app using a JWT-Powered API.
  */
 
 'use strict';

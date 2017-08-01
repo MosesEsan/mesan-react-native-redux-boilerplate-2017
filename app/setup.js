@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
 import store from '../app/store'; //Import the store
-import Main from '../app/index' //Import the app/index.js file
+import Main from '../app/index' //
 
 function setup() {
     class Root extends Component {
