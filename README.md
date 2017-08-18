@@ -5,8 +5,8 @@ Boilerplate for a React Native iOS and Android app using Redux
 **Demo** <br/>
 <a href="https://appetize.io/app/rhbrxh0z4d49tn9t9uermgty40?device=iphone5s&scale=75&orientation=portrait&osVersion=9.3" target="_blank">View Demo</a>
 
-**Other Branch** <br/>
-<a href="https://github.com/MosesEsan/mesan-react-native-redux-boilerplate/tree/crud-operations" target="_blank">React Native Redux with CRUD operations</a>
+**Related Repo** <br/>
+<a href="https://github.com/MosesEsan/mesan-react-native-redux-crud-operations" target="_blank">React Native Redux with CRUD operations</a>
 
 
 ### Tutorial
