@@ -83,21 +83,21 @@ Reducers are the ones in charge of updating the state of the app. Redux will aut
 It’s up to the reducer to realize if it needs to modify the state or not based on the action.type.
 <br>
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerplate" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-boilerplate-4899f5c4f431" target="_blank">blog</a>.
 
 <a name="step6"></a>
 ### Step 6: Create Your Component
 
 In your components folder create a js file <b>home.js</b>
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerplate" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-boilerplate-4899f5c4f431" target="_blank">blog</a>.
 
 <a name="step7"></a>
 ### Step 7: Create Your Store
 
 In the app folder, create a js file <b>store.js</b>
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerplate" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-boilerplate-4899f5c4f431" target="_blank">blog</a>.
 
 <a name="step8"></a>
 ### Step 8: Link It All Together
@@ -105,9 +105,9 @@ Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux
 Redux needs to inject a store holding the app state into the app.
 To do so, it requires a ‘Provider’ wrapping the whole app.
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerplate" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-boilerplate-4899f5c4f431" target="_blank">blog</a>.
 
 <a name="step9"></a>
 ### Step 9: Update Your Main files
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/18/react-native-redux-boilerplate" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-react-native-redux-boilerplate-4899f5c4f431" target="_blank">blog</a>.
