@@ -17,7 +17,7 @@ export function getData(){
         //delay the retrieval [Sample reasons only]
         setTimeout(() => {
             var data  = Data.instructions;
-            dispatch({type: DATA_AVAILABLE, data:data});
+            dispatch({type: DATA_AVAILABLE, data: data});
         }, 2000);
 
     };
